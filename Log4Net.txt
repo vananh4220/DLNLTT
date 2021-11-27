@@ -1,0 +1,64 @@
+﻿2021-11-27 09:29:31,138 [5] ERROR - Instance failure.
+2021-11-27 09:33:17,100 [4] ERROR - Instance failure.
+2021-11-27 09:33:20,591 [4] ERROR - Instance failure.
+2021-11-27 09:40:05,590 [4] ERROR - Instance failure.
+2021-11-27 09:40:14,507 [4] ERROR - Instance failure.
+2021-11-27 09:40:21,628 [4] ERROR - Instance failure.
+2021-11-27 09:42:48,622 [4] ERROR - Keyword not supported: '"data source'.
+2021-11-27 09:42:48,622 [5] ERROR - Keyword not supported: '"data source'.
+2021-11-27 09:47:05,924 [4] INFO - 
+Mặt trời: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 46MW	Sản lượng ngày: 50MWh
+Gió: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 46MW	Sản Lượng ngày: 50MWh
+Sinh khối: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 46MW	Sản lượng ngày: 50MWh
+Tổng 
+	Hiện tại: 81MW	Công suất lớn nhất: 27MW	Thiết kế: 138MW	Sản lượng ngày: 150MWh
+2021-11-27 09:50:38,667 [7] ERROR - Cannot open database "DLNLTT" requested by the login. The login failed.
+Login failed for user 'NT AUTHORITY\SYSTEM'.
+2021-11-27 09:53:08,875 [4] INFO - 
+Mặt trời: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 1MWh
+Gió: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản Lượng ngày: 1MWh
+Sinh khối: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 1MWh
+Tổng 
+	Hiện tại: 81MW	Công suất lớn nhất: 27MW	Thiết kế: 159MW	Sản lượng ngày: 3MWh
+2021-11-27 09:53:14,253 [4] INFO - 
+Mặt trời: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 12MWh
+Gió: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản Lượng ngày: 12MWh
+Sinh khối: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 12MWh
+Tổng 
+	Hiện tại: 81MW	Công suất lớn nhất: 27MW	Thiết kế: 159MW	Sản lượng ngày: 36MWh
+2021-11-27 09:53:26,474 [4] INFO - 
+Mặt trời: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 22MWh
+Gió: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản Lượng ngày: 22MWh
+Sinh khối: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 22MWh
+Tổng 
+	Hiện tại: 81MW	Công suất lớn nhất: 27MW	Thiết kế: 159MW	Sản lượng ngày: 66MWh
+2021-11-27 09:53:34,114 [10] INFO - 
+Mặt trời: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 31MWh
+Gió: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản Lượng ngày: 31MWh
+Sinh khối: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 31MWh
+Tổng 
+	Hiện tại: 81MW	Công suất lớn nhất: 27MW	Thiết kế: 159MW	Sản lượng ngày: 93MWh
+2021-11-27 09:53:47,490 [10] INFO - 
+Mặt trời: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 41MWh
+Gió: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản Lượng ngày: 41MWh
+Sinh khối: 
+	Hiện tại: 27MW	Công suất lớn nhất: 9MW	Thiết kế: 53MW	Sản lượng ngày: 41MWh
+Tổng 
+	Hiện tại: 81MW	Công suất lớn nhất: 27MW	Thiết kế: 159MW	Sản lượng ngày: 123MWh
