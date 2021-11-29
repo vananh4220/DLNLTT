@@ -1,8 +1,12 @@
 ﻿using HtmlAgilityPack;
 using log4net;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using Quartz;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -13,17 +17,30 @@ using System.Timers;
 
 namespace DLNLTT
 {
+    
     public class ThuThapSoLieu //Service
     {
         private static readonly ILog log = LogManager.GetLogger(typeof(ThuThapSoLieu));
 
         private readonly Timer _timer;
-
+        private string ConnectionString = "";
+        private string Url = "";
+        private string Username = "";
+        private string Password= "";
+        private int Timer = 0;
+        private ConfigJsonModel items;
         public ThuThapSoLieu()
         {
-            int timer = int.Parse(ConfigurationManager.AppSettings["timer"]);
+            using (StreamReader r = new StreamReader("appsettings.json"))
+            {
+                string json = r.ReadToEnd();
+                items = JsonConvert.DeserializeObject<ConfigJsonModel>(json);
+            }
+
+            int timer = items.Timer;
             _timer = new Timer(timer) { AutoReset = true };
             _timer.Elapsed += TimerElapsed;
+
         } 
 
         private async void TimerElapsed(object sender, ElapsedEventArgs e)
@@ -31,13 +48,10 @@ namespace DLNLTT
             try
             {
                 string token = "";
-                string url = ConfigurationManager.AppSettings["url"];
-                string Username = ConfigurationManager.AppSettings["Username"];
-                string Password = ConfigurationManager.AppSettings["Password"];
+                string Username = items.Username;
+                string Password = items.Password;
+                string urltoken = items.Url;
 
-
-
-                string urltoken = url;
                 using (HttpClient client = new HttpClient())
                 {
                     HttpResponseMessage message = client.GetAsync(urltoken).Result;
@@ -49,7 +63,7 @@ namespace DLNLTT
                         var a = htmlDocument.DocumentNode.SelectSingleNode("//form[@id='login-form']/input");
                         token = a.Attributes["value"].Value;
 
-                        client.DefaultRequestHeaders.Add("Referer", url);
+                        client.DefaultRequestHeaders.Add("Referer", urltoken);
                         List<KeyValuePair<string, string>> param = new List<KeyValuePair<string, string>>()
 
                         {
